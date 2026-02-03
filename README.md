@@ -20,15 +20,20 @@ This project implements multiple classification algorithms to predict autism tra
   - K-Nearest Neighbors (KNN)
 - **Model Evaluation**: Accuracy, Precision, Recall, F1-Score, Confusion Matrix
 - **Feature Importance Analysis**: Identifies key predictors of ASD
+- **Data Visualizations**: Interactive charts using Matplotlib & Seaborn
+  - Class distribution (Pie & Bar charts)
+  - Confusion matrices for all models
+  - Model performance comparison
+  - Feature importance bar chart
 
 ## 📊 Results
 
 | Model | Accuracy |
 |-------|----------|
-| Random Forest 🏆 | 81.25% |
-| Logistic Regression | 81.25% |
-| SVM | 80.00% |
-| KNN | 78.75% |
+| Random Forest 🏆 | 84.38% |
+| KNN | 83.12% |
+| Logistic Regression | 82.50% |
+| SVM | 79.38% |
 
 ## 📁 Dataset
 
@@ -55,7 +60,7 @@ python -m venv .venv
 source .venv/bin/activate
 
 # Install dependencies
-pip install pandas numpy scikit-learn
+pip install -r requirements.txt
 ```
 
 ## ▶️ Usage
@@ -71,8 +76,10 @@ python autism_prediction.py
 - pandas
 - numpy
 - scikit-learn
+- matplotlib
+- seaborn
 
-> 💡 **Tip**: All dependencies are isolated in the `.venv` folder to avoid conflicts with other projects.
+> 💡 **Tip**: Install all dependencies at once using `pip install -r requirements.txt`
 
 ## 🔑 Key Findings
 
